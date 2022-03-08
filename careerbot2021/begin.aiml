@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>begin</pattern>
+        <template> Welcome to the Career Bot for the Department of Computer Science!  <delay>1</delay>
+        Before we get started, can I ask what your major is?
+        <button>
+            <text>Computer Science</text>
+            <postback>compsci choice</postback>
+        </button>
+        <button>
+            <text>Other</text>
+            <postback>compsci not</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>compsci choice</pattern>
+        <template>Excellent!  Computer Science is my prime directive.  Are you looking for assistance in narrowing down your career choices?
+            <button>
+                <text>Yes</text>
+                <postback>field of study</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>no help exit</postback>
+            </button> 
+        </template>
+    </category>
+    
+    <category>
+        <pattern>compsci not</pattern>
+        <template>Interesting.  Your major is not Computer Science.  Would you still like to continue to see what kind of careers are available for Computer Science?
+            <button>
+                <text>Yes</text>
+                <postback>field of study</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>no help exit</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>field of study</pattern>
+        <template>What is the career field you are most interested in?
+            <button>
+                <text>Computer Science</text>
+                <postback>compsci choices</postback>
+            </button>
+            <button>
+                <text>Other</text>
+                <postback>non cs career</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>no help exit</pattern>
+        <template>No problem.  Come back if you ever need assistance!
+        <button>
+            <text>Restart</text>
+            <postback>begin</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>non cs career</pattern>
+        <template>Unfortunately, I am only limited to assisting with Computer Science careers at this time.  Please reach out to Student Support to better assist you in choosing a career path:
+        <link>
+            <text>WGU Student Support</text>
+            <url>https://my.wgu.edu/student-support/contact-wgu</url>
+        </link>
+        <button>
+            <text>Restart</text>
+            <postback>begin</postback>
+        </button>
+        </template>
+        
+    </category>
+
+</aiml>

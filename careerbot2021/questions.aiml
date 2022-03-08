@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>generic questions</pattern>
+        <template>That's just fine.  Not everyone has a preferred language.  We're going to have to ask you a few generic questions in order to find something suitable, so pick the first one that really calls out to you.  
+        <delay>1</delay>
+        <srai>question 1</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>question 1</pattern>
+        <template>Do you enjoy working with large sets of data?
+        <button>
+            <text>Yes</text>
+            <postback>data scientist</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>question 2</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>question 2</pattern>
+        <template>Do you enjoy working with networks and solving security issues?
+            <button>
+            <text>Yes</text>
+            <postback>security engineer</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>question 3</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>question 3</pattern>
+        <template>Are you a very visual person?
+            <button>
+                <text>Yes</text>
+                <postback>front end developer</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>question 4</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>question 4</pattern>
+        <template>Do you enjoy working with servers, databases, and application code?
+            <button>
+            <text>Yes</text>
+            <postback>back end developer</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>question 5</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>question 5</pattern>
+        <template>Do you enjoy working through all aspects of a project, from the visual all the way through the back end?
+            <button>
+            <text>Yes</text>
+            <postback>full stack developer</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>questions end</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>questions end</pattern>
+        <template>It seems we've run out of appropriate questions for now.  I'm going to suggest being a general Software Engineer, but feel free to do research on your own or meet with an advisor to see what other possibilities are available!
+        <button>
+            <text>Software Engineer</text>
+            <postback>software engineer</postback>
+        </button>
+        </template>
+    </category>
+</aiml>

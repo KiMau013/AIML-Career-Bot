@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>compsci choices</pattern>
+        <template>Computer Science encompasses a large selection of job possibilities.  Here is a selection of possible choices.  Do any of these interest you?
+        <button>
+            <text>Software Engineer</text>
+            <postback>software engineer</postback>
+        </button>
+        <button>
+            <text>Front End Developer</text>
+            <postback>front end developer</postback>
+        </button>
+        <button>
+            <text>Back End Developer</text>
+            <postback>back end developer</postback>
+        </button>
+        <button>
+            <text>Full Stack Developer</text>
+            <postback>full stack developer</postback>
+        </button>
+        <button>
+            <text>Security Engineer</text>
+            <postback>security engineer</postback>
+        </button>
+        <button>
+            <text>Data Scientist</text>
+            <postback>data scientist</postback>
+        </button>
+        <button>
+            <text>Not Sure</text>
+            <postback>not sure</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>software engineer</pattern>
+        <template>A general software engineer is someone who creates computer programs.  They can take many different paths and have many different possibilities to choose from.  Read more here:
+            <link>
+                <text>Software Engineer Overview</text>
+                <url>https://www.indeed.com/career/software-engineer</url>
+            </link>
+            <link>  
+                <text>Software Engineer Salaries</text>
+                <url>https://www.indeed.com/career/software-engineer/salaries</url>
+            </link>
+        <button>
+            <text>Return to Choices</text>
+            <postback>compsci choices</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>front end developer</pattern>
+        <template>A front end developer focuses on the audio and visual components of web design.  There are multiple different focuses that exist.  Read more here:
+            <link>
+                <text>Front End Developer Overview</text>
+                <url>https://www.indeed.com/career/front-end-developer</url>
+            </link>
+            <link>
+                <text>Front End Developer Salaries</text>
+                <url>https://www.indeed.com/career/front-end-developer/salaries</url>
+            </link>
+        <button>
+            <text>Return to Choices</text>
+            <postback>compsci choices</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>back end developer</pattern>
+        <template>A back end developer focuses on the creation and maintenance of the back end of a website.  There are multiple specialties to choose from.  Read more here:
+            <link>
+                <text>Back End Developer Overview</text>
+                <url>https://www.indeed.com/career/back-end-developer</url>
+            </link>
+            <link>
+                <text>Back End Developer Salaries</text>
+                <url>https://www.indeed.com/career/back-end-developer/salaries</url>
+            </link>
+        <button>
+            <text>Return to Choices</text>
+            <postback>compsci choices</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>full stack developer</pattern>
+        <template>A full stack developer is someone who lives in both the front and the back end of web development, able to do aspects of both.  Read more here:
+            <link>
+                <text>Full Stack Developer Overview</text>
+                <url>https://www.indeed.com/career/full-stack-developer</url>
+            </link>
+            <link>
+                <text>Full Stack Developer Salaries</text>
+                <url>https://www.indeed.com/career/full-stack-developer/salaries</url>
+            </link>
+        <button>
+            <text>Return to Choices</text>
+            <postback>compsci choices</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>security engineer</pattern>
+        <template>A security engineer focuses on protecting a company's computers and networks.  They are a combination of Computer Science, Networking, and IT.  Read more here: 
+            <link>
+                <text>Security Engineer Overview</text>
+                <url>https://www.indeed.com/career/security-engineer</url>
+            </link>
+            <link>
+                <text>Security Engineer Salaries</text>
+                <url>https://www.indeed.com/career/security-engineer/salaries</url>
+            </link>
+        <button>
+            <text>Return to Choices</text>
+            <postback>compsci choices</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>data scientist</pattern>
+        <template>A data scientist is someone who focuses on analyzing large, raw data sets to organize and interpret different meanings from them.  Read more here:
+            <link>
+                <text>Data Science Overview</text>
+                <url>https://www.indeed.com/career/data-scientist</url>
+            </link>
+            <link>
+                <text>Data Science Salaries</text>
+                <url>https://www.indeed.com/career/data-scientist/salaries</url>
+            </link>
+        <button>
+            <text>Return to Choices</text>
+            <postback>compsci choices</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>not sure</pattern>
+        <template>That's no problem at all.  We can all use a little help sometimes.  Let me ask you a few questions in order to suggest a suitable career path.  <br></br>
+        Do you have a favorite programming language?
+        <button>
+            <text>Yes</text>
+            <postback>programming language</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>generic questions</postback>
+        </button>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,3 @@
+This AIML Bot (Originally deployed on PandoraBots) was created to assist with a career in Computer Science.  It asseses the individuals student status, their CS interest, and continues by giving a broad list of job possibilities for the career field. 
+
+Each choice includes a brief overview, a link to a more comprehensive desecription, and a link to average salaries for that role.  If the user is unsure, a branch of logic will activate that will suggest a choice based on their preferred programming language.  If they don't have one, another series of questions will launch, picking the first question they agree with and making a suggestion.
